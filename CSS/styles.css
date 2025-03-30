@@ -61,10 +61,10 @@ img {
 }
 
 .white {
-    color: #EBF5EE;
+    color: #aabf76;
 }
 
-.hoverlink {text-decoration: none; color: #EBF5EE}
+.hoverlink {text-decoration: none; color: #aabf76}
 .hoverlink:hover {color: #367491; /*font-style: italic;*/}
 
 .hiddenlink {text-decoration: none; color: black; }
@@ -79,7 +79,7 @@ h1 {
 
 h1.title {
     font-size: 4em; 
-    color: #ebf5ee
+    color: #aabf76
 }
 
 p {
@@ -91,7 +91,7 @@ p.back_button {
 }
 
 span {
-    color: #EBF5EE;
+    color: #aabf76;
 }
 
 span.black {
