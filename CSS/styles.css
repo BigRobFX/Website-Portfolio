@@ -1,14 +1,21 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: #283044;
+    background-color: #96a4d3;
 }
 
-img {
+img.headshot {
     width: 20em;
     height: 20em;
     border-radius: 0.7em;
-    filter: drop-shadow(0 0 0.75rem #aabf76);
+    filter: drop-shadow(0 0 1rem #c2b280);
 }
+
+img.signal {
+    width: 20em;
+    border-radius: 0.7em;
+    filter: drop-shadow(0 0 .75rem #c2b280);
+}
+
 .wrapper {
     padding-top: 1em;
     display: grid;
@@ -42,7 +49,6 @@ img {
     background-color: #152046;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px black;
-    text-decoration-color: #aabf76;
 }
 
 .google_preview_box {
@@ -65,12 +71,12 @@ img {
     color:white;
 }
 
-.gold {
-    color: #aabf76;
+.sand {
+    color: #c2b280;
 }
 
-.hoverlink {text-decoration: none; color: #aabf76}
-.hoverlink:hover {color: #367491; /*font-style: italic;*/}
+.hoverlink {text-decoration: none; color: #c2b280}
+.hoverlink:hover {color: #96a4d3; /*font-style: italic;*/}
 
 .hiddenlink {text-decoration: none; color: black; }
 .hiddenlink:hover {color: gray}
@@ -84,7 +90,7 @@ h1 {
 
 h1.title {
     font-size: 4em; 
-    color: #aabf76
+    color: #c2b280
 }
 
 p {
@@ -96,7 +102,7 @@ p.back_button {
 }
 
 span {
-    color: #aabf76;
+    color: #c2b280;
 }
 
 span.black {
