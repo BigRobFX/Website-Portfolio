@@ -37,9 +37,9 @@ img.signal {
 
 .title_box1, .title_box2 {
     text-align: center;
-    width: 90%;
+    width: 95%;
     max-width: 900px;
-    padding: 1em;
+    padding: 1em 0.8em;    /* 1em top/bottom, 0.8em left/right so text has room */
     background-color: #152046;
     border-radius: 5px;
     box-shadow: 5px 5px 10px 2px black;
@@ -48,9 +48,9 @@ img.signal {
 
 .main_box {
     text-align: center;
-    width: 90%;            /* Fits nicely inside mobile screens with small side margins */
+    width: 95%;            /* Fits nicely inside mobile screens with small side margins */
     max-width: 900px;      /* Keeps it tidy on desktop */
-    padding: 1em;          /* Reduced padding for smaller screens */
+    padding: 1em 0.8em;    /* 1em top/bottom, 0.8em left/right so text has room */
     background-color: #152046;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px black;
@@ -59,10 +59,9 @@ img.signal {
 
 .main_box_signal {
     text-align: center;
-    width: 90%;            /* Fits nicely inside mobile screens with small side margins */
+    width: 95%;            /* Fits nicely inside mobile screens with small side margins */
     max-width: 900px;      /* Keeps it tidy on desktop */
-    padding: 1em;          /* Reduced padding for smaller screens */
-    padding-bottom: 2em;
+    padding: 1em 0.8em 2em 0.8em; /* top right bottom left with reduced padding for smaller screens */
     background-color: #152046;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px black;
