@@ -1,19 +1,30 @@
-body{
+html, body{
     font-family: Arial, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
     /*background-color: #96a4d3;*/
     background-color: rgb(62, 74, 90);
 }
 
-img.headshot {
-    width: 20em;
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 3. Override fixed width on headshot image */
+img.headshot, img.signal {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    /*max-width: 260px; /* Limits size on both phone and desktop */
     height: auto;
     border-radius: 0.7em;
+}
+
+img.headshot {
     filter: drop-shadow(0 0 1rem #c2b280);
 }
 
 img.signal {
-    width: 20em;
-    border-radius: 0.7em;
     filter: drop-shadow(0 0 .75rem #c2b280);
 }
 
@@ -24,6 +35,8 @@ img.signal {
     gap: 1em;
     padding-bottom: 2em;
 }
+
+/*
 .title_box1 {
     text-align: center;
     width: auto;
@@ -42,7 +55,21 @@ img.signal {
     border-radius: 5px;
     box-shadow: 5px 5px 10px 2px black;
 }
+*/
 
+/* Apply box-sizing to title boxes as well */
+.title_box1, .title_box2 {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    padding: 1em;
+    background-color: #152046;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 2px black;
+    box-sizing: border-box;
+}
+
+/*
 .main_box {
     text-align: center;
     min-width: 30em;
@@ -62,6 +89,32 @@ img.signal {
     background-color: #152046;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px black;
+}
+*/
+
+/* 1. Remove min-width so boxes shrink on small screens */
+.main_box {
+    text-align: center;
+    width: 90%;            /* Fits nicely inside mobile screens with small side margins */
+    max-width: 600px;      /* Keeps it tidy on desktop */
+    padding: 1em;          /* Reduced padding for smaller screens */
+    background-color: #152046;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px black;
+    box-sizing: border-box; /* Prevents padding from adding to element width */
+}
+
+/* 1. Remove min-width so boxes shrink on small screens */
+.main_box_signal {
+    text-align: center;
+    width: 90%;            /* Fits nicely inside mobile screens with small side margins */
+    max-width: 600px;      /* Keeps it tidy on desktop */
+    padding: 1em;          /* Reduced padding for smaller screens */
+    padding-bottom: 2em;
+    background-color: #152046;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 2px black;
+    box-sizing: border-box; /* Prevents padding from adding to element width */
 }
 
 .google_preview_box {
@@ -98,12 +151,21 @@ iframe.googlepreviewresume {height: 40em; width: 40em}
 iframe.googlepreview {height: 60em; width: 60em}
 
 h1 {
-    font-size: 2em;
+    font-size: clamp(1.4em, 5vw, 2em);
 }
 
+/*
 h1.title {
     font-size: 4em; 
     color: #c2b280
+}
+*/
+
+/* 2. Make large titles responsive so long names don't overflow */
+h1.title {
+    font-size: clamp(2em, 8vw, 4em); /* Scales fluidly between mobile and desktop */
+    color: #c2b280;
+    word-break: break-word;          /* Prevents overflow if the screen is ultra-narrow */
 }
 
 p {
