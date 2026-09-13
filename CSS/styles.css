@@ -39,7 +39,7 @@ img.signal {
     width: 95%;
     max-width: 900px;
     padding: 1em 0.8em;    /* 1em top/bottom, 0.8em left/right so text has room */
-    background-color: #2e2e31;
+    background-color: #1d1d1f;
     border-radius: 5px;
     box-shadow: 0 0 10px #cccccc;
     box-sizing: border-box;
@@ -50,7 +50,7 @@ img.signal {
     width: 95%;            /* Fits nicely inside mobile screens with small side margins */
     max-width: 900px;      /* Keeps it tidy on desktop */
     padding: 1em 0.8em;    /* 1em top/bottom, 0.8em left/right so text has room */
-    background-color: #2e2e31;
+    background-color: #1d1d1f;
     border-radius: 10px;
     box-shadow: 0 0 10px #cccccc;
     box-sizing: border-box; /* Prevents padding from adding to element width */
@@ -61,7 +61,7 @@ img.signal {
     width: 95%;            /* Fits nicely inside mobile screens with small side margins */
     max-width: 900px;      /* Keeps it tidy on desktop */
     padding: 1em 0.8em 2em 0.8em; /* top right bottom left with reduced padding for smaller screens */
-    background-color: #2e2e31;
+    background-color: #1d1d1f;
     border-radius: 10px;
     box-shadow: 0 0 10px #cccccc;
     box-sizing: border-box; /* Prevents padding from adding to element width */
@@ -72,14 +72,14 @@ img.signal {
     min-width: 30em;
     max-width: 80%;
     padding: 2em 2em;
-    background-color: #2e2e31;
+    background-color: #1d1d1f;
     border-radius: 10px;
     box-shadow: 0 0 10px #cccccc;
 }
 
 .back_box {
     padding: 0em 1.5em;
-    background-color: #2e2e31;
+    background-color: #1d1d1f;
     border-radius: 10px;
     box-shadow: 0 0 10px #cccccc;
 }
