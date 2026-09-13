@@ -10,12 +10,11 @@ html, body{
     box-sizing: border-box;
 }
 
-/* 3. Override fixed width on headshot image */
 img.headshot, img.signal {
     display: block;
     margin: 0 auto;
     width: 60%;
-    /*max-width: 260px; /* Limits size on both phone and desktop */
+    max-width: 400px; /* Limits size on both phone and desktop */
     height: auto;
     border-radius: 0.7em;
 }
@@ -36,32 +35,10 @@ img.signal {
     padding-bottom: 2em;
 }
 
-/*
-.title_box1 {
-    text-align: center;
-    width: auto;
-    padding: .5em 2em ;
-    padding-bottom: 2em;
-    background-color: #152046;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px 2px black;
-}
-
-.title_box2 {
-    text-align: center;
-    width: auto;
-    padding: 0em 2em ;
-    background-color: #152046;
-    border-radius: 5px;
-    box-shadow: 5px 5px 10px 2px black;
-}
-*/
-
-/* Apply box-sizing to title boxes as well */
 .title_box1, .title_box2 {
     text-align: center;
     width: 90%;
-    max-width: 600px;
+    max-width: 900px;
     padding: 1em;
     background-color: #152046;
     border-radius: 5px;
@@ -69,34 +46,10 @@ img.signal {
     box-sizing: border-box;
 }
 
-/*
-.main_box {
-    text-align: center;
-    min-width: 30em;
-    max-width: 60%;
-    padding: 0em 2em;
-    background-color: #152046;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 2px black;
-}
-
-.main_box_signal {
-    text-align: center;
-    min-width: 30em;
-    max-width: 60%;
-    padding: 0em 2em;
-    padding-bottom: 2em;
-    background-color: #152046;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px 2px black;
-}
-*/
-
-/* 1. Remove min-width so boxes shrink on small screens */
 .main_box {
     text-align: center;
     width: 90%;            /* Fits nicely inside mobile screens with small side margins */
-    max-width: 600px;      /* Keeps it tidy on desktop */
+    max-width: 900px;      /* Keeps it tidy on desktop */
     padding: 1em;          /* Reduced padding for smaller screens */
     background-color: #152046;
     border-radius: 10px;
@@ -104,11 +57,10 @@ img.signal {
     box-sizing: border-box; /* Prevents padding from adding to element width */
 }
 
-/* 1. Remove min-width so boxes shrink on small screens */
 .main_box_signal {
     text-align: center;
     width: 90%;            /* Fits nicely inside mobile screens with small side margins */
-    max-width: 600px;      /* Keeps it tidy on desktop */
+    max-width: 900px;      /* Keeps it tidy on desktop */
     padding: 1em;          /* Reduced padding for smaller screens */
     padding-bottom: 2em;
     background-color: #152046;
@@ -126,6 +78,7 @@ img.signal {
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px black;
 }
+
 .back_box {
     padding: 0em 1.5em;
     background-color: #152046;
@@ -154,14 +107,6 @@ h1 {
     font-size: clamp(1.3em, 4.5vw, 2em);
 }
 
-/*
-h1.title {
-    font-size: 4em; 
-    color: #c2b280
-}
-*/
-
-/* 2. Make large titles responsive so long names don't overflow */
 h1.title {
     font-size: clamp(2em, 8vw, 4em); /* Scales fluidly between mobile and desktop */
     color: #c2b280;
@@ -193,7 +138,6 @@ pre {
     word-break: break-word;
 }
 
-/*the below was added by Gemini for my contact page*/
 /* Button Box & Actions Container */
 .button_box {
     padding: 2em;
