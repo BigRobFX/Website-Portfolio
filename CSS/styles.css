@@ -95,8 +95,8 @@ img.signal {
 .hoverlink {text-decoration: none; color: #c2b280}
 .hoverlink:hover {color: #96a4d3; /*font-style: italic;*/}
 
-.hiddenlink {text-decoration: none; color: black; }
-.hiddenlink:hover {color: gray}
+.hiddenlink {text-decoration: none; color: gray; }
+.hiddenlink:hover {color: black}
 
 iframe.googlepreviewresume {height: 40em; width: 40em}
 iframe.googlepreview {height: 60em; width: 60em}
