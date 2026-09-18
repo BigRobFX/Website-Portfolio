@@ -31,7 +31,7 @@ img.signal {
     display: grid;
     justify-items: center;
     gap: 1em;
-    padding-bottom: 2em;
+    padding-bottom: max(4em, calc(3em + env(safe-area-inset-bottom)));
 }
 
 .title_box1, .title_box2 {
